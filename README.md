@@ -13,9 +13,7 @@ ach = Kosa.CreateArchiver("OwO Meow!", Kosa.Algorithms.GZIP)
 ach.scan("path/to/folder/of/files")
 
 with open("file.kosa", "wb") as f:
-    print("getting archbyte")
     b = ach.get_bytes()
-    print("writing archbyte")
     f.write(b)
 
 
